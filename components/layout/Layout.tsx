@@ -7,7 +7,9 @@ interface ILayout {
 }
 
 const Layout: React.FC<ILayout> = ({ children }) => (
-  <div className={styles.container}>{children}</div>
+  <div className={styles.container}>
+    <div className={styles.content}>{children}</div>
+  </div>
 );
 
 export default Layout;
