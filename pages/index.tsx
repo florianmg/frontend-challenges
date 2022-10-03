@@ -141,6 +141,17 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+        <div className={styles['home-container']}>
+          <div className={styles.content}>
+            <p className={styles.content__title}>Adventure togrther</p>
+            <p className={styles.content__text}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              id laborum vitae dolorem, illo vero, a modi, aliquam temporibus
+              qui quasi dolorum iusto consequuntur maxime ipsam aliquid
+              voluptate ullam aperiam.
+            </p>
+          </div>
+        </div>
       </>
     </Layout>
   );
