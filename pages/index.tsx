@@ -5,6 +5,7 @@ import cn from 'classnames';
 import Layout from '../components/layout';
 
 import styles from '../styles/Home.module.scss';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -68,34 +69,42 @@ const Home: NextPage = () => {
         </div>
         <div className={styles['nav-bar']}>
           <ul className={styles.list}>
-            <li
-              className={cn(styles.item, {
-                [styles.active]: true,
-              })}
-            >
-              Home
-            </li>
-            <li
-              className={cn(styles.item, {
-                [styles.active]: false,
-              })}
-            >
-              About
-            </li>
-            <li
-              className={cn(styles.item, {
-                [styles.active]: false,
-              })}
-            >
-              Gallery
-            </li>
-            <li
-              className={cn(styles.item, {
-                [styles.active]: false,
-              })}
-            >
-              Contact
-            </li>
+            <Link href="/">
+              <a
+                className={cn(styles.item, {
+                  [styles.active]: true,
+                })}
+              >
+                Home
+              </a>
+            </Link>
+            <Link href="/">
+              <a
+                className={cn(styles.item, {
+                  [styles.active]: false,
+                })}
+              >
+                About
+              </a>
+            </Link>
+            <Link href="/">
+              <a
+                className={cn(styles.item, {
+                  [styles.active]: false,
+                })}
+              >
+                Gallery
+              </a>
+            </Link>
+            <Link href="/">
+              <a
+                className={cn(styles.item, {
+                  [styles.active]: false,
+                })}
+              >
+                Contact
+              </a>
+            </Link>
           </ul>
           <div className={styles['theme-switch']}>
             <Image
