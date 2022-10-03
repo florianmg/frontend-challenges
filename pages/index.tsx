@@ -11,6 +11,24 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <>
+        <div className={styles.decorations}>
+          <div className={styles.blocks}>
+            <Image
+              src="/images/blocks.png"
+              width={1104}
+              height={848}
+              alt="background"
+            />
+          </div>
+          <div className={styles.astronaut}>
+            <Image
+              src="/images/astronaut.png"
+              width={323}
+              height={242}
+              alt="astronaut"
+            />
+          </div>
+        </div>
         <div className={styles['left-panel']}>
           <Image
             src="/images/logo.png"
