@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import cn from 'classnames';
 
 import Layout from '../components/layout';
@@ -39,37 +38,31 @@ const Home: NextPage = () => {
           />
           <div className={styles.icons}>
             <div className={styles.icon}>
-              <Link href="*">
-                <Image
-                  src="/images/icons/facebook.svg"
-                  layout="fixed"
-                  width={32}
-                  height={32}
-                  alt="Logo Facebook"
-                />
-              </Link>
+              <Image
+                src="/images/icons/facebook.svg"
+                layout="fixed"
+                width={32}
+                height={32}
+                alt="Logo Facebook"
+              />
             </div>
             <div className={styles.icon}>
-              <Link href="*">
-                <Image
-                  src="/images/icons/instagram.svg"
-                  layout="fixed"
-                  width={32}
-                  height={32}
-                  alt="Logo Instagram"
-                />
-              </Link>
+              <Image
+                src="/images/icons/instagram.svg"
+                layout="fixed"
+                width={32}
+                height={32}
+                alt="Logo Instagram"
+              />
             </div>
             <div className={styles.icon}>
-              <Link href="*">
-                <Image
-                  src="/images/icons/twitter.svg"
-                  layout="fixed"
-                  width={32}
-                  height={32}
-                  alt="Logo twitter"
-                />
-              </Link>
+              <Image
+                src="/images/icons/twitter.svg"
+                layout="fixed"
+                width={32}
+                height={32}
+                alt="Logo twitter"
+              />
             </div>
           </div>
         </div>

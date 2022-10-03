@@ -159,11 +159,17 @@
   margin: auto;
   z-index: 0;
   .astronaut {
+    transition: transform 5s;
     position: absolute;
     bottom: 0;
     top: 250px;
     right: 350px;
     z-index: 0;
+
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
   }
 
   .blocks {
@@ -172,6 +178,18 @@
     top: 0;
     right: 0;
     z-index: 0;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 60px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
 
