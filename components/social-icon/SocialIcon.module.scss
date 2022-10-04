@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.icon {
+  cursor: pointer;
+  display: block;
+  margin-top: 32px;
+  padding: 8px;
+  border-radius: 8px;
+  &:hover {
+    background: $blurred-dark;
+  }
+} 

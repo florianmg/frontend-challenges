@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+
+.bottom-panel {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    left: 162px;
+    height: 255px;
+    background: $blurred-dark;
+    backdrop-filter: blur(25px);
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index: 20;
+    .article {
+      color: white;
+      display: flex;
+      align-items: center;
+      margin-left: 50px;
+      min-width: 800px;
+      
+      &__content {
+        position: relative;
+        margin-left: 70px;
+        max-width: 400px;
+        height: 100%;
+        box-sizing: border-box;
+        padding-top: 50px;
+      }   
+      &__title {
+        font-size: $font-size-l;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      &__extract {
+        font-size: $font-size-sm;
+        font-weight: 500;
+        line-height: 31px;
+      }
+      .thumbnail {
+        transition: transform .2s;
+      }
+      .button {
+        transition: all .2s;
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+      }
+      &:hover {
+        cursor: pointer;
+        .thumbnail {
+          transform: scale(1.2);
+        }
+        .button {
+          right: -25px;
+        }
+      }
+    }
+  }
